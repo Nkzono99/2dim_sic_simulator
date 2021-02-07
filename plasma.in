@@ -1,0 +1,31 @@
+$random
+    random_seed = 420
+/
+
+$simulation
+    nsteps = 5000
+    npcl_init = 100
+    max_npcl  = 400000
+    nx = 1024
+    ny = 1
+    dx = 1
+    dt = 5e-8
+    boundary_type = 1
+/
+
+$solver
+    refinement_interval = 100
+    refinement_threshold = 10
+/
+
+$output
+    output_steps = 500
+/
+
+$plasma
+    nspec = 2
+    lambda = 10
+    q_ratio(1:2) = -1, 1
+    m_ratio(1:2) = 1, 1836
+    Ts(1:2) = 1.0d8, 1.0d8
+/

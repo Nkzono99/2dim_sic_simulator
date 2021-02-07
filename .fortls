@@ -1,0 +1,16 @@
+{
+    "source_dirs": [
+        "src",
+        "src/fft",
+        "src/io",
+        "src/halfedge",
+        "src/utils",
+        "src/vectors",
+        "src/field",
+        "build/_deps/jsonfortran-src/src"
+        ],
+    "ext_source_dirs": [
+        "C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\include",
+        "C:\\Program Files (x86)\\Intel\\oneAPI\\mkl\\latest\\include\\intel64\\ilp64"
+        ]
+}

@@ -238,6 +238,7 @@ contains
         double precision :: simplex_energy
 
         type(Vector3d) :: vel1, vel2, vel3
+        type(Vector3d) :: mean_vel
 
         type(t_VertexAroundFaceIter) :: viter
 
@@ -265,7 +266,8 @@ contains
         !                  + vel3%y*vel1%y
 
         ! Simplexの速度が一様である場合
-        simplex_energy = (vel1 + vel2 + vel3)%norm2() / 9
+        mean_vel = (vel1 + vel2 + vel3) / 3.0d0
+        simplex_energy = mean_vel%norm2()
 
         simplex_energy = 0.5d0*self%m*simplex_energy
     end function

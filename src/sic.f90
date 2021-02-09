@@ -182,6 +182,7 @@ contains
 
         tracers(npcl + 1)%position = newpos
         tracers(npcl + 1)%velocity = newvel
+        tracers(npcl + 1)%ispec = simplicies(isimp)%ispec
 
         ! 分割後のSimplexを設定する
         ispec = simplicies(isimp)%ispec

@@ -31,7 +31,7 @@ contains
 
     subroutine intel_fft_backward(zfunc)
         complex(8), intent(inout) :: zfunc(*)
-        statdft = dfticomputebackward(plandft, zfunc)
+        statdft = dftiComputeBackward(plandft, zfunc)
     end subroutine
 
 end module

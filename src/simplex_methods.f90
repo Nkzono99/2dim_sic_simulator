@@ -264,6 +264,7 @@ contains
         !                  + vel1%y*vel2%y &
         !                  + vel2%y*vel3%y &
         !                  + vel3%y*vel1%y
+        ! simplex_energy = simplex_energy / 6.0d0
 
         ! Simplexの速度が一様である場合
         mean_vel = (vel1 + vel2 + vel3) / 3.0d0
